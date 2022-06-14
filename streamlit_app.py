@@ -1,3 +1,5 @@
 import streamlit
 
-streamlit.title('my app output')
+streamlit.title('Title - my app output')
+streamlit.header('Header')
+streamlit.text('Text')
