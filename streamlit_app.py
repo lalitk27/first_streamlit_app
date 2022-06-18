@@ -48,7 +48,6 @@ if streamlit.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
-streamlit.stop()
 
 def insert_row_snowflake(fruit_entry):
     with my_cnx.cursor() as my_cur:
@@ -62,4 +61,4 @@ if streamlit.button('Add a Fruit to the List'):
     back_from_function = insert_row_snowflake(new_fruit_entry)
     streamlit.text(back_from_function)
 
-
+streamlit.stop()
